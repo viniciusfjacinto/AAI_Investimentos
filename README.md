@@ -28,7 +28,7 @@ Base Safra - Base de dados onde são colados os valores da planilha 'Base Molde'
 
 dFundos - Relação entre Fundos e CNPJ de acordo com os nomes distintos presentes na planilha de Operações, coluna Mercadoria/Fundos
 
-dClientes - Relação entre código do Cliente (presente na coluna Cliente da planilha de Operações), nome e assessor responsável
+dClientes - Relação entre código do Cliente (presente na coluna Cliente da planilha de Operações), nome e assessor responsável, proveniente da tabela Rateio Fundo Assessores
 
 *Também há uma planilha oculta chamada Apoio, onde foram colados valores na horizontal para facilitar as fórmulas para cálculo do retorno na planilha Fundos 1Ydaybyday
 
@@ -70,5 +70,5 @@ Foi feita uma consulta no CRM da Empresa utilizando uma API Get diretamente pelo
 
 As consultas foram separads em pastass (R, Excel e Pipedrive), para detonar se são provenientes de um Script em R, da base em Excel ou da API do CRM, sendo que as menos importantes, ou aquelas que apenas servem para merge/append, foram ocultadas
 
-Ainda, utilizamos o arquivo Lista_de_Fundos_MÊS para filtrar aqueles Fundos abertos e fechados, que também norteiam parte do trabalho cotidiano na empresa
+Ainda, utilizamos o arquivo Lista de Fundos_MÊS para filtrar aqueles Fundos abertos e fechados, que também norteiam parte do trabalho cotidiano na empresa
 
