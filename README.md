@@ -54,7 +54,7 @@ T3 = Variacao nas Volatilidades do Portfolio
 
 T4 = Rentabilidades em D-1 pelos dois métodos
 
-Foi feita uma divisão manual do Script em partes menores que foram introduzidas diretamente em consultas no Power Query pelo Power BI. Estas são acionadas toda vez que o relatório se atualizar
+Foi feita uma divisão manual do Script em partes menores que foram introduzidas diretamente em consultas no Power Query pelo Power BI. Estas são acionadas toda vez que o relatório se atualizar e, para que o uso do script dentro da ferramenta fosse possível, foi necessário remover alguns pacotes como Knitr, KableExtra, Writexlsx, GGPlot2, MailsendR, além de remover o código de tabelas, gráficos e salvamento de arquivos
 
 Com isso, a função do R dentro do projeto consiste em apenas debugar algum problema futuro que venha a surgir e realizar o envio de e-mails sazonais
 
