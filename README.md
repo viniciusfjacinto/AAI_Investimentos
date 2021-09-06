@@ -70,3 +70,5 @@ Foi feita uma consulta no CRM da Empresa utilizando uma API Get diretamente pelo
 
 As consultas foram separads em pastass (R, Excel e Pipedrive), para detonar se são provenientes de um Script em R, da base em Excel ou da API do CRM, sendo que as menos importantes, ou aquelas que apenas servem para merge/append, foram ocultadas
 
+Ainda, utilizamos o arquivo Lista_de_Fundos_MÊS para filtrar aqueles Fundos abertos e fechados, que também norteiam parte do trabalho cotidiano na empresa
+
