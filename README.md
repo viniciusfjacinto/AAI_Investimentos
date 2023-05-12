@@ -2,7 +2,9 @@
 
 ![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/5fc06f59-634b-4299-8270-8482b67e1370)
 
-Projeto desenvolvido para gerenciar a carteira de Clientes de uma empresa de investimentos. A estrutura do projeto está dividida em 3 etapas:
+Projeto desenvolvido para gerenciar a carteira de Clientes de uma empresa de investimentos. O dashboard completo anonimizado pode ser visto em: https://app.powerbi.com/view?r=eyJrIjoiNGZhMThjNWUtMTRmMS00M2I3LWI3NTYtYTg3ZDgyYzFjMjliIiwidCI6ImM3Mzk2ZTVlLTYzMDYtNGIwZi1hN2NmLWI1YzFhNDRkNDk0MSJ9
+
+A estrutura do projeto foi dividida em 3 etapas:
 
 # 1 - Preparação da Base de Dados em Excel
 
