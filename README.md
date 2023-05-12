@@ -2,7 +2,7 @@
 
 Projeto desenvolvido para gerenciar a carteira de Clientes de uma empresa de investimentos. A estrutura do projeto está dividida em 3 etapas:
 
-1 - Preparação da Base de Dados em Excel
+# 1 - Preparação da Base de Dados em Excel
 
 Obs: Foi escolhido o Excel devido à necessidade de usufruto dos dados da plataforma Economática. Os quais, de acordo com o plano assinado pela empresa, só são possíveis de serem extraídos utilizando um Add-In disponível na ferramenta da Microsoft.
 
@@ -40,7 +40,7 @@ Ao ser aberta a planilha, deve-se logar no Add-In do Economática e esperar a at
 
 Nos dias de atualização do relatório, deve-se ter em mãos a versão mais recente do arquivo "visao_operacoes" do Safra Invest e copiá-la para 'Base Molde' e depois transpô-la para 'Base Safra', seguindo-se os critérios descritos
 
-2 - Script em R para calcular o Retorno das Carteiras em D-1 e a Volatilidade destas tanto na Data de Aportes quando em D-1, possibilitando a análise de variação
+# 2 - Script em R para calcular o Retorno das Carteiras em D-1 e a Volatilidade destas tanto na Data de Aportes quando em D-1, possibilitando a análise de variação
 
 Ainda, são feitas análises adicionais, como a Volatilidade Ewma das Carteiras, o cálculo do Retorno considerando fundos resgatados que geraram lucro ou prejuízo
 
@@ -60,7 +60,7 @@ Com isso, a função do R dentro do projeto consiste em apenas debugar algum pro
 
 Sobre isso, e-mails sazonais serão enviados para os assessores indicando quais clientes necessitam de atenção por apresentarem variações na Volatilidade da Carteira acima ou abaixo dos parâmetros estimados. Tudo isso encontra-se programado em script auxiliar.
 
-3 - Power BI
+# 3 - Power BI
 
 A última etapa consistiu no desenvolvimento dos visuais e medidas necessárias à visualização dos dados nos formatos necessários, proporcionando a agilidade e a organização requeridos para o trabalho no dia a dia
 
