@@ -8,27 +8,27 @@ Obs: Foi escolhido o Excel devido à necessidade de usufruto dos dados da plataf
 
 Na base em Excel dividmos os dados em planilhas diferentes para facilitar a identificação e conexão destes dados em outras ferramentas. Assim, encontramos as seguintes planilhas:
 
-Fundos - Informações generalizadas sobre os fundos utilizados pela empresa
+#### Fundos - Informações generalizadas sobre os fundos utilizados pela empresa
   *Obs: Possui 2 linhas com nomes de colunas para facilitar a fixação de nomes no tratamento pelo Power BI, dado que os nomes das colunas na linha 2 se alteram diariamente sempre que atualizadas
 
-Retorno Fundos 1Ydaybyday - Retornos dos fundos no período entre o último dia útil (D-1) e o mesmo dia no ano passado. A contagem segue apenas os dias úteis
+#### Retorno Fundos 1Ydaybyday - Retornos dos fundos no período entre o último dia útil (D-1) e o mesmo dia no ano passado. A contagem segue apenas os dias úteis
 
-Cotas - Histórico do valor da cota dos fundos no período de 5 anos
+#### Cotas - Histórico do valor da cota dos fundos no período de 5 anos
 
-IBOV CDI - Valores históricos de fechamento do Ibovespa e o CDI Acumulado no período de 5 anos
+#### IBOV CDI - Valores históricos de fechamento do Ibovespa e o CDI Acumulado no período de 5 anos
 
-Base Molde - Planilha onde são colados os valores da tabela de Operações (extraída do BI do Safra Invest) para obtermos os valores de Retorno,  Cota e Volatilidade a partir das data de aplicação/resgate em cada Fundo para cada Cliente, após obedecidos os seguintes critérios:
+#### Base Molde - Planilha onde são colados os valores da tabela de Operações (extraída do BI do Safra Invest) para obtermos os valores de Retorno,  Cota e Volatilidade a partir das data de aplicação/resgate em cada Fundo para cada Cliente, após obedecidos os seguintes critérios:
   - Remove as colunas não essenciais, ficando apenas com Data, Cliente, Mercadoria/Fundo, Quantidade e Valor
   - Filtro em Mercadoria/Fundo remove COE, Debêntures e VIS
   - Filtro em Valores remove valores entre -100 e 0
   - Aplicação de PROCV para adicionar uma coluna com CNPJs e substituir a coluna Cliente pelos nomes dos Clientes (por meio das planilhas dFundos e dClientes)
 *Obs: Os dados são colados na forma vertical/wide (onde cada coluna representa uma movimentação) pois isso acelera em muito o tempo de realização das consultas pela Economática, sendo a forma mais eficiente para que as informações possam ser atualizadas várias vezes ao dia
 
-Base Safra - Base de dados onde são colados os valores da planilha 'Base Molde', transpostos e abaixo do cabeçalho
+#### Base Safra - Base de dados onde são colados os valores da planilha 'Base Molde', transpostos e abaixo do cabeçalho
 
-dFundos - Relação entre Fundos e CNPJ de acordo com os nomes distintos presentes na planilha de Operações, coluna Mercadoria/Fundos
+#### dFundos - Relação entre Fundos e CNPJ de acordo com os nomes distintos presentes na planilha de Operações, coluna Mercadoria/Fundos
 
-dClientes - Relação entre código do Cliente (presente na coluna Cliente da planilha de Operações), nome e assessor responsável, proveniente da tabela Rateio Fundo Assessores
+#### dClientes - Relação entre código do Cliente (presente na coluna Cliente da planilha de Operações), nome e assessor responsável, proveniente da tabela Rateio Fundo Assessores
 
 *Também há uma planilha oculta chamada Apoio, onde foram colados valores na horizontal para facilitar as fórmulas para cálculo do retorno na planilha Fundos 1Ydaybyday
 
@@ -46,13 +46,13 @@ Ainda, são feitas análises adicionais, como a Volatilidade Ewma das Carteiras,
 
 O script foi comentado e dividido em sub-seções para facilitar seu entendimento. Além do mais, os resultados foram separados em outputs essenciais que são consumidos pelo Power BI (tabelas denominadas T1, T2, T3 e T4)
 
-T1 = Volatilidade do Portfolio na Data de Aplicacaoo, incluindo Vol Individual, Peso e Wnon
+#### T1 = Volatilidade do Portfolio na Data de Aplicacaoo, incluindo Vol Individual, Peso e Wnon
 
-T2 = Volatilidade do Portfolio em D-1, incluindo Vol Individual, Peso e Wnon
+#### T2 = Volatilidade do Portfolio em D-1, incluindo Vol Individual, Peso e Wnon
 
-T3 = Variacao nas Volatilidades do Portfolio 
+#### T3 = Variacao nas Volatilidades do Portfolio 
 
-T4 = Rentabilidades em D-1 pelos dois métodos
+#### T4 = Rentabilidades em D-1 pelos dois métodos
 
 Foi feita uma divisão manual do Script em partes menores que foram introduzidas diretamente em consultas no Power Query pelo Power BI. Estas são acionadas toda vez que o relatório se atualizar e, para que o uso do script dentro da ferramenta fosse possível, foi necessário remover alguns pacotes como Knitr, KableExtra, Writexlsx, GGPlot2, MailsendR, além de remover o código de tabelas, gráficos e salvamento de arquivos
 
