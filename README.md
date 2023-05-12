@@ -2,6 +2,9 @@
 
 ![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/898e5b8d-6496-4324-8831-d1ebed448819)
 
+![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/4af9310a-0be7-4b50-b51d-bd52a98b5cd8)
+
+
 Projeto desenvolvido para gerenciar a carteira de Clientes de uma empresa de investimentos. A estrutura do projeto está dividida em 3 etapas:
 
 # 1 - Preparação da Base de Dados em Excel
