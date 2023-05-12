@@ -2,9 +2,6 @@
 
 ![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/a24bfad4-3796-4165-92a2-091f23ea5e98)
 
-![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/14db7ee7-22b0-42fb-9844-88c33f7bff95)
-
-
 
 Projeto desenvolvido para gerenciar a carteira de Clientes de uma empresa de investimentos. A estrutura do projeto está dividida em 3 etapas:
 
