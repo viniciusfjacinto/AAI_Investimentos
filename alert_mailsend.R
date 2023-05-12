@@ -27,27 +27,27 @@ T3VolAlta %>%
 #Nomeia o Servidor SMTP
 smtp <- server(host = "smtp.gmail.com",
                port = 465,
-               username = "viniciusfjacinto@gmail.com",
-               password = "vj110796")
+               username = "aai_alert@gmail.com",
+               password = "*********")
 
 
 #Cria uma lista unica com cada assessor
 Assessores <- list(unique(T3VolAlta$Assessor))
 
 
-# Enzo ----------------------------------------------------------------------------------------
+# Assessor 1 ----------------------------------------------------------------------------------------
 
-#Prepara Email Enzo
+#Prepara Email Assessor 1
 T3_Enzo <- filter(T3VolAlta, T3VolAlta$Assessor == Assessores[[1]][[2]])
 path_enzo <- tempfile(fileext = ".xlsx")
-write.xlsx(T3_Enzo, path_enzo)
-T3_Email_Enzo <- "enzo.constantino@hotmail.com"
+write.xlsx(T3_Assessor1, path_assessor1)
+T3_Email_Enzo <- "assessor1@hotmail.com"
 
-#Envia Email Enzo
+#Envia Email Assessor 1
 email <- envelope() %>%
   attachment(path_enzo) %>% 
-  from("viniciusfjacinto@gmail.com") %>%
-  to(T3_Email_Enzo) %>%
+  from("alert_aai@gmail.com") %>%
+  to(T3_Email_Assessor1) %>%
   subject("Alertas de Volatilidade das Carteiras") %>% 
   text("Bom dia! 
 Segue a relacao de clientes que apresentaram uma variacao da volatilidade maior que 30%. Para mais detalhes, acesse a Aba 'Portfolio Clientes' e clique em 'Visao Completa' no dashboard do link: 
@@ -58,20 +58,20 @@ https://app.powerbi.com/view?r=eyJrIjoiNGQ0MjBmY2YtNzZjNi00NWI0LTk4Y2YtNGNhYzNlY
 smtp(email, verbose = TRUE)
 
 
-# Leo -----------------------------------------------------------------------------------------
+# Gerente 1 -----------------------------------------------------------------------------------------
 
 
-#Prepara Email Leo
-T3_Leo <- T3VolAlta
-path_leo <- tempfile(fileext = ".xlsx")
-write.xlsx(T3_Leo, path_leo)
-T3_Email_Leo <- "leopac@hotmail.com"
+#Prepara Email Gerente 1
+T3_Gerente1 <- T3VolAlta
+path_gerente1 <- tempfile(fileext = ".xlsx")
+write.xlsx(T3_Gerente1, path_gerente1)
+T3_Email_Gerente1 <- "gerente1@hotmail.com"
 
-#Envia Email Leo
+#Envia Email Gerente 1
 email <- envelope() %>%
-  attachment(path_leo) %>% 
-  from("viniciusfjacinto@gmail.com") %>%
-  to(T3_Email_Leo) %>%
+  attachment(path_gerente1) %>% 
+  from("alert_aai@gmail.com") %>%
+  to(T3_Email_Gerente1) %>%
   subject("Alertas de Volatilidade das Carteiras") %>% 
   text("Bom dia! 
 Segue a relacao de clientes que apresentaram uma variacao da volatilidade maior que 30%. Para mais detalhes, acesse a Aba 'Portfolio Clientes' e clique em 'Visao Completa' no dashboard do link: 
