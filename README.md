@@ -1,7 +1,6 @@
 # Agente Autônomo de Investimentos
 
-![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/a24bfad4-3796-4165-92a2-091f23ea5e98)
-
+<iframe src="https://app.powerbi.com/view?r=eyJrIjoiNGZhMThjNWUtMTRmMS00M2I3LWI3NTYtYTg3ZDgyYzFjMjliIiwidCI6ImM3Mzk2ZTVlLTYzMDYtNGIwZi1hN2NmLWI1YzFhNDRkNDk0MSJ9" width="800" height="600"></iframe>
 
 Projeto desenvolvido para gerenciar a carteira de Clientes de uma empresa de investimentos. A estrutura do projeto está dividida em 3 etapas:
 
