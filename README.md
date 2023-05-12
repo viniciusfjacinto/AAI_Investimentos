@@ -40,7 +40,7 @@ Ao ser aberta a planilha, deve-se logar no Add-In do Economática e esperar a at
 
 Nos dias de atualização do relatório, deve-se ter em mãos a versão mais recente do arquivo "visao_operacoes" do Safra Invest e copiá-la para 'Base Molde' e depois transpô-la para 'Base Safra', seguindo-se os critérios descritos
 
-# 2 - Script em R para calcular o Retorno das Carteiras em D-1 e a Volatilidade destas tanto na Data de Aportes quando em D-1, possibilitando a análise de variação
+# 2 - Script em R para calcular o Retorno das Carteiras em D-1 / A Volatilidade destas tanto na Data de Aportes quando em D-1 / Possibilitando a análise de variação
 
 Ainda, são feitas análises adicionais, como a Volatilidade Ewma das Carteiras, o cálculo do Retorno considerando fundos resgatados que geraram lucro ou prejuízo
 
