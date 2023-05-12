@@ -1,4 +1,4 @@
-# EntreRiosInvestimentos
+# Agente Autônomo de Investimentos
 
 Projeto desenvolvido para gerenciar a carteira de Clientes de uma empresa de investimentos. A estrutura do projeto está dividida em 3 etapas:
 
