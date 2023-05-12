@@ -35,7 +35,7 @@ options(digits = 4)
 ## RentabilidadeFAtivos = Rentabilidade que considera apenas os fundos ativos
 
 #Pasta dos Arquivos
-FolderA <- "c:/Users/Cautela/Desktop/EntreRios/Econom·tica/"
+FolderA <- "c:/Users/Cautela/Desktop/EntreRios/Econom√°tica/"
 
 #Carrega base Fundos
 Fundos <- read_excel(paste0(FolderA,"Fundos5.xlsx"))
@@ -117,7 +117,7 @@ for (i in 1:length(VClientes)) {
     as.data.frame %>% 
     group_by(Cliente) %>% 
     filter(Data %in% min(Data):add.bizdays(min(Data),5,"Brazil/ANBIMA")) %>% 
-    filter(Natureza == "AplicaÁ„o")
+    filter(Natureza == "Aplica√ß√£o")
   
   #Calcula Peso e Volatilidade
   TabelasIn[[i]]$Peso <- TabelasIn[[i]]$Soma / sum(TabelasIn[[i]]$Soma)
@@ -222,7 +222,7 @@ for (i in 1:length(VClientesT1)) {
   #Regra3: CotaInicialManual = CotaInicial se Resgate e Qtd <> 0
   #Regra4: |Valor|/Soma(Qtd) se Resgate e Qtd = 0
   #Regra5: Se |Cota Inicial Manual| - |Cota Inicial| > 20,
-  #entao Cota Inicial Manual = Cota Econom√°tica em D
+  #entao Cota Inicial Manual = Cota Econom√É¬°tica em D
   #Regra para corrigir um erro especifico em TabelasFn[[5]]
   
   #1
@@ -488,7 +488,7 @@ RentabilidadeFAtivos2 <- RentabilidadeFAtivos2 %>%  group_by(Cliente) %>%
 
 ##Calcular a matriz de correl de todos os fundos
 FundosRtCorr <- 
-  FundosRt[,!names(FundosRt) %in% c('Ticker','Nome','Empresa gestora','ClassificaÁ„o Anbima')]
+  FundosRt[,!names(FundosRt) %in% c('Ticker','Nome','Empresa gestora','Classifica√ß√£o Anbima')]
 FundosRtCorr <- t(FundosRtCorr)
 colnames(FundosRtCorr) <- FundosRtCorr[1,]
 FundosRtCorr <- FundosRtCorr[-1,]
