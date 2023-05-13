@@ -91,7 +91,7 @@ Ainda, utilizamos o arquivo Lista de Fundos_MÊS para filtrar aqueles Fundos abe
 
 # 4 - Clustering
 
-Como estudo, foi feito um clustering dos fundos que permitiu complementar a análise da matriz de correlação para a seleção de Fundos com base em suas variâncias conjuntas e, também, com base em seus agrupamentos categórios de retorno de 1 dia, retorno de 1 ano, volatilidade, valor da cota, sharpe e sortino. O agrupamento foi feito pelos métodos WARD e KMEANS.
+Como estudo, foi feito um clustering dos fundos que permitiu complementar a análise da matriz de correlação para a seleção de Fundos com base em suas variâncias conjuntas e, também, com base em seus agrupamentos categórios considerando as variáveis: retorno de 1 dia, retorno de 1 ano, volatilidade, valor da cota, sharpe e sortino. O agrupamento foi feito pelos métodos WARD e KMEANS.
 
 Idealmente, cada carteira deve se especializar em uma categoria que seja aderente ao perfil do investidor, ou conter ao menos 1 fundo de cada grupo para diverisifcação.
 
