@@ -68,6 +68,10 @@ Exemplo de Report para um Cliente - Caso a volatilidade da carteira (simples ou 
 
 ![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/57c56c85-bfbb-4465-bcb9-3c024626273d)
 
+Exemplo de Análise dos Retornos EWMA (Diário) para um Cliente
+
+![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/4530ee46-fc73-40da-92a1-ccea35371691)
+
 # 3 - Power BI
 
 A última etapa consistiu no desenvolvimento dos visuais e medidas necessárias à visualização dos dados nos formatos necessários, proporcionando a agilidade e a organização requeridos para o trabalho no dia a dia
