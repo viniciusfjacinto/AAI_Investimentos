@@ -1,7 +1,5 @@
 # Agente Autônomo de Investimentos
 
-![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/5fc06f59-634b-4299-8270-8482b67e1370)
-
 Projeto desenvolvido para gerenciar a carteira de Clientes de uma empresa de investimentos. O dashboard completo anonimizado pode ser visto em: https://app.powerbi.com/view?r=eyJrIjoiNGZhMThjNWUtMTRmMS00M2I3LWI3NTYtYTg3ZDgyYzFjMjliIiwidCI6ImM3Mzk2ZTVlLTYzMDYtNGIwZi1hN2NmLWI1YzFhNDRkNDk0MSJ9
 
 A estrutura do projeto foi dividida em 3 etapas:
@@ -66,6 +64,10 @@ Com isso, a função do R dentro do projeto consiste em apenas debugar algum pro
 
 Sobre isso, e-mails sazonais serão enviados para os assessores indicando quais clientes necessitam de atenção por apresentarem variações na Volatilidade da Carteira acima ou abaixo dos parâmetros estimados. Tudo isso encontra-se programado em script auxiliar.
 
+Exemplo de Report para um Cliente - Caso a volatilidade da carteira (simples ou EWMA) ultrapasse as bandas em roxo, indicando uma variação maior que 30%, então os ativos deverão ser rebalanceados.
+
+![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/57c56c85-bfbb-4465-bcb9-3c024626273d)
+
 # 3 - Power BI
 
 A última etapa consistiu no desenvolvimento dos visuais e medidas necessárias à visualização dos dados nos formatos necessários, proporcionando a agilidade e a organização requeridos para o trabalho no dia a dia
@@ -78,3 +80,4 @@ As consultas foram separads em pastass (R, Excel e Pipedrive), para detonar se s
 
 Ainda, utilizamos o arquivo Lista de Fundos_MÊS para filtrar aqueles Fundos abertos e fechados, que também norteiam parte do trabalho cotidiano na empresa
 
+![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/5fc06f59-634b-4299-8270-8482b67e1370)
