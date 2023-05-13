@@ -12,7 +12,7 @@ library(plotly)
 library(knitr)
 library(kableExtra)
 
-Fundos5orig <- read_excel("C:/Users/Cautela/Desktop/EntreRios/Economática/Fundos5.xlsx")
+Fundos5orig <- read_excel("C:\\Users\\Cautela\\Desktop\\BI\\EntreRios\\Economática\\Fundos5.xlsx")
 Fundos5orig <- Fundos5orig[-1,]
 
 
@@ -124,7 +124,7 @@ fundos_fim <- rename(fundos_fim, "KMEANS" = "fundosk5$cluster")
 
 library(xlsx)
 folderA = "c:/Users/Cautela/Desktop"
-xlsx::write.xlsx(fundos_fim, file = "c:/Users/Cautela/Desktop/clustfundos.xlsx")
+#xlsx::write.xlsx(fundos_fim, file = "c:/Users/Cautela/Desktop/clustfundos.xlsx")
 
 mediagrupo_fundos <- rename(mediagrupo_fundos, "Agrup" = "fundos_fim$.")
 mediagrupo_fundos$type <- "WARD" 
@@ -164,6 +164,8 @@ library(ggplot2)
 fundos_fim$WARD <- fundos_fim$WARD %>% as.factor()
 fundos_fim$KMEANS <- fundos_fim$KMEANS %>% as.factor()
 
+
+#2d PLOT
 ggplotly(
 ggplot(fundos_fim,
        aes(
@@ -186,5 +188,22 @@ ggplotly(
     ylim(0,40) 
 )
 
-plot(fundos_fim$`Valor da Cota mais recente`)
+#3D Plot
+
+plot_kmeans <- plot_ly(fundos_fim, x = ~`Valor da Cota mais recente`, y = ~`Retorno do fechamento em 1 ano`, z = ~`Volatilidade base anual`, color = ~KMEANS) %>%
+  add_markers(size = 1) %>%
+  layout(scene = list(xaxis = list(title = "Valor da Cota mais recente"),
+                      yaxis = list(title = "Retorno do fechamento em 1 ano"),
+                      zaxis = list(title = "Volatilidade Base Anual")),
+         title = "KMEANS Clustering")
+
+plot_ward <- plot_ly(fundos_fim, x = ~`Valor da Cota mais recente`, y = ~`Retorno do fechamento em 1 ano`, z = ~`Volatilidade base anual`, color = ~WARD) %>%
+  add_markers(size = 1) %>%
+  layout(scene = list(xaxis = list(title = "Valor da Cota mais recente"),
+                      yaxis = list(title = "Retorno do fechamento em 1 ano"),
+                      zaxis = list(title = "Volatilidade Base Anual")),
+         title = "WARD Clustering")
+
+subplot(plot_kmeans,nrows = 1)
+
 
