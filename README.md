@@ -42,7 +42,7 @@ Ao ser aberta a planilha, deve-se logar no Add-In do Economática e esperar a at
 
 Nos dias de atualização do relatório, deve-se ter em mãos a versão mais recente do arquivo "visao_operacoes" do Safra Invest e copiá-la para 'Base Molde' e depois transpô-la para 'Base Safra', seguindo-se os critérios descritos
 
-![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/b65dbd53-8c7e-48f4-ba41-e40be779a292)
+![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/05074f9d-a782-4b28-a8b7-1dcd86c43364)
 
 # 2 - Script em R para calcular o Retorno das Carteiras em D-1 / A Volatilidade destas tanto na Data de Aportes quando em D-1 / Possibilitando a análise de variação
 
@@ -66,11 +66,13 @@ Sobre isso, e-mails sazonais serão enviados para os assessores indicando quais 
 
 Exemplo de Report para um Cliente - Caso a volatilidade da carteira (simples ou EWMA) ultrapasse as bandas em roxo, indicando uma variação maior que 30%, então os ativos deverão ser rebalanceados.
 
-![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/57c56c85-bfbb-4465-bcb9-3c024626273d)
+![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/d60fbab4-b5d6-435a-8601-8c4b28ceffbd)
+
 
 Exemplo de Análise dos Retornos EWMA (Diário) para um Cliente
 
-![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/5ba543da-6542-47af-a6b2-b82e903c30b1)
+![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/f1c85bb8-3629-4abb-841b-1f8a38fb16ac)
+
 
 # 3 -Power BI
 
@@ -84,10 +86,15 @@ As consultas foram separads em pastass (R, Excel e Pipedrive), para detonar se s
 
 Ainda, utilizamos o arquivo Lista de Fundos_MÊS para filtrar aqueles Fundos abertos e fechados, que também norteiam parte do trabalho cotidiano na empresa
 
-![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/5fc06f59-634b-4299-8270-8482b67e1370)
+![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/e41cda1e-2788-4405-b103-9efa36504412)
+![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/17b9d352-5597-4693-a0c4-413a97f58718)
 
 # 4 - Clustering
 
-Como estudo, foi feito um clustering dos fundos que permitiu complementar a análise da matriz de correlação para a seleção de Fundos com base em suas variâncias conjuntas e, também, com base em seus agrupamentos categórios de retorno, volatilidade, valor da cota, dentre outras variáveis.
+Como estudo, foi feito um clustering dos fundos que permitiu complementar a análise da matriz de correlação para a seleção de Fundos com base em suas variâncias conjuntas e, também, com base em seus agrupamentos categórios de retorno de 1 dia, retorno de 1 ano, volatilidade, valor da cota, sharpe e sortino. O agrupamento foi feito pelos métodos WARD e KMEANS.
+
+Idealmente, cada carteira deve se especializar em uma categoria que seja aderente ao perfil do investidor, ou conter ao menos 1 fundo de cada grupo para diverisifcação.
+
+![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/91d61ec0-e93e-43cd-a5c6-31f62273bf6c)
 
 
