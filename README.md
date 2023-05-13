@@ -96,7 +96,6 @@ Idealmente, cada carteira deve se especializar em uma categoria que seja aderent
 
 ![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/91d61ec0-e93e-43cd-a5c6-31f62273bf6c)
 
-![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/d59f551f-2332-46d9-9f08-616a05cfe162)
-
+![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/34be0fb7-e152-4e02-a825-558185aaa4f6)
 
 
