@@ -71,7 +71,7 @@ Exemplo de Report para um Cliente - Caso a volatilidade da carteira (simples ou 
 
 Exemplo de Análise dos Retornos EWMA (Diário) para um Cliente
 
-![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/b1283f17-de05-4a84-96ea-1d60fa2251a5)
+![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/d4e1ebed-f22e-4a9d-9863-a4b2487800be)
 
 # 3 -Power BI
 
