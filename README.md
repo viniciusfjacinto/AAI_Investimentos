@@ -68,7 +68,11 @@ Exemplo de Report para um Cliente - Caso a volatilidade da carteira (simples ou 
 
 ![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/57c56c85-bfbb-4465-bcb9-3c024626273d)
 
-# 3 - Power BI
+Exemplo de Análise dos Retornos EWMA (Diário) para um Cliente
+
+![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/5ba543da-6542-47af-a6b2-b82e903c30b1)
+
+# 3 -Power BI
 
 A última etapa consistiu no desenvolvimento dos visuais e medidas necessárias à visualização dos dados nos formatos necessários, proporcionando a agilidade e a organização requeridos para o trabalho no dia a dia
 
@@ -81,3 +85,9 @@ As consultas foram separads em pastass (R, Excel e Pipedrive), para detonar se s
 Ainda, utilizamos o arquivo Lista de Fundos_MÊS para filtrar aqueles Fundos abertos e fechados, que também norteiam parte do trabalho cotidiano na empresa
 
 ![image](https://github.com/viniciusfjacinto/AAI_Investimentos/assets/87664450/5fc06f59-634b-4299-8270-8482b67e1370)
+
+# 4 - Clustering
+
+Como estudo, foi feito um clustering dos fundos que permitiu complementar a análise da matriz de correlação para a seleção de Fundos com base em suas variâncias conjuntas e, também, com base em seus agrupamentos categórios de retorno, volatilidade, valor da cota, dentre outras variáveis.
+
+
