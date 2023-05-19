@@ -35,7 +35,7 @@ options(digits = 4)
 ## RentabilidadeFAtivos = Rentabilidade que considera apenas os fundos ativos
 
 #Pasta dos Arquivos
-FolderA <- "c:/Users/Cautela/Desktop/EntreRios/Economática/"
+FolderA <- "c:/Users/.../"
 
 #Carrega base Fundos
 Fundos <- read_excel(paste0(FolderA,"Fundos5.xlsx"))
