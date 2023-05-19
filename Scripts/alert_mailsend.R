@@ -8,7 +8,7 @@ library(magrittr)
 
 # Carregamento da Base de Clientes ------------------------------------------------------------
 
-dClientes <- read_sheet('https://docs.google.com/spreadsheets/d/1wQ5sSikEoirVsTyGAavVXeg0xwRhiNmyXtxlkhs4wdw/edit?usp=sharing')
+dClientes <- read_sheet('https://docs.google.com/spreadsheets/d/.../edit?usp=sharing')
 dClientes$Cliente <- as.character(dClientes$Cliente)
 
 
