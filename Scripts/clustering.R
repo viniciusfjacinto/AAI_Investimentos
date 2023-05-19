@@ -12,7 +12,7 @@ library(plotly)
 library(knitr)
 library(kableExtra)
 
-Fundos5orig <- read_excel("C:\\Users\\Cautela\\Desktop\\BI\\EntreRios\\Economática\\Fundos5.xlsx")
+Fundos5orig <- read_excel("C:\\Users\\...\\Fundos5.xlsx")
 Fundos5orig <- Fundos5orig[-1,]
 
 
