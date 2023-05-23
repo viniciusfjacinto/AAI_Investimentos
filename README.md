@@ -1,6 +1,6 @@
 # Agente Autônomo de Investimentos
 
-Projeto desenvolvido para gerenciar a carteira de Clientes de uma empresa de investimentos. O dashboard completo anonimizado pode ser visto em: https://app.powerbi.com/view?r=eyJrIjoiNGZhMThjNWUtMTRmMS00M2I3LWI3NTYtYTg3ZDgyYzFjMjliIiwidCI6ImM3Mzk2ZTVlLTYzMDYtNGIwZi1hN2NmLWI1YzFhNDRkNDk0MSJ9
+Projeto desenvolvido para gerenciar a carteira de Clientes de uma empresa de investimentos. O dashboard completo pode ser visto em: https://app.powerbi.com/view?r=eyJrIjoiNGZhMThjNWUtMTRmMS00M2I3LWI3NTYtYTg3ZDgyYzFjMjliIiwidCI6ImM3Mzk2ZTVlLTYzMDYtNGIwZi1hN2NmLWI1YzFhNDRkNDk0MSJ9
 
 A estrutura do projeto foi dividida em 3 etapas:
 
